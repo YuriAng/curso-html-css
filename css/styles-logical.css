@@ -62,10 +62,6 @@ header {
   margin-block-start: 20px;
   font-size: 14px;
   color: var(--white30);
-  /*  position: absolute;
-  inset-block-start: 0;
-  inset-inline-start: -188px;
-  inline-size: 208px; */
 }
 
 header li {
@@ -133,7 +129,7 @@ blockquote p {
 }
 
 .section-content img {
-  scroll-margin-block-start: 40px;
+  margin-block-start: 40px;
   display: block;
   max-inline-size: 100%;
 }
@@ -205,10 +201,10 @@ blockquote p {
 }
 
 .form input {
-  width: 100%;
+  inline-size: 100%;
   border: 1px solid var(--white30);
+  background: #251F24;
   box-sizing: border-box;
-  background: #251f24;
   border-radius: 8px;
   padding-inline: 16px;
   padding-block: 12px;
@@ -217,15 +213,16 @@ blockquote p {
   display: block;
   margin-block-end: 24px;
 }
+
 .form input[type="submit"] {
-  background: #157efb;
+  background: #157EFB;
   border: none;
+  margin-block-end: 40px;
 }
 
-.form :-ms-input-placeholder {
+.form ::-webkit-input-placeholder{
   color: var(--white20);
 }
-
 @media screen and (min-width: 1366px) {
   .hero {
     block-size: 350px;
@@ -240,9 +237,9 @@ blockquote p {
   }
 
   .header-content {
-    padding-inline: 0;
     position: relative;
     inset-block-start: 65px;
+    padding-inline: 0;
   }
   header {
     position: absolute;
@@ -250,4 +247,6 @@ blockquote p {
     inset-inline-start: -188px;
     inline-size: 208px;
   }
+
+
 }
